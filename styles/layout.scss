@@ -1,6 +1,8 @@
 // See: https://sass-lang.com/
-
-body,
 html {
-  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: transparent
 }
