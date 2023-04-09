@@ -31,13 +31,21 @@ font-size: 30px;
 .item {
   background-color: rgb(231, 186, 160);
   width: 120%;
-  height: 120px;
+  height: 130px;
   color: #0c0b0b;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   font-size: 30px;
   border-radius: 10px;
   border: 5px solid rgb(113, 76, 30);
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 20px;
 }
