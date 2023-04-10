@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  color: #545149;
+  color: rgb(113, 76, 30);
   background-color: transparent;
 }
 
@@ -46,8 +46,7 @@ font-size: 30px;
 .details {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 20px;
 }
 
@@ -58,5 +57,13 @@ font-size: 30px;
   padding-right: 5px;
   justify-content: space-evenly;
   width: 100%;
-  width: 170%;
+}
+
+.icon {
+  display: flex;
+  padding: 10px;
+}
+
+.icon:hover {
+  color: rgb(113, 76, 30);
 }
