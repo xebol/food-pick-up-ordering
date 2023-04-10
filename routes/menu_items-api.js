@@ -29,6 +29,21 @@ router.get('/:id', (req, res) => {
     });
 });
 
+router.patch('/:id', (req, res) => {
+  const menuItemID = req.params.id;
+  const menuItems = req.body;
+  menuItemsQueries.editMenuItemByID(menuItemID, menuItems)
+    .then(item => {
+      console.log("Edited item: ", item);
+      res.json({ item });
+    })
+    .catch(err => {
+      res
+        .status(500)
+        .json({ error: err.message });
+    });
+});
+
 //set up code that responds to a post request '/api/menu_items'
 router.post('/', (req, res) => {
   //Using bodyParser = require('body-parser') in server.js
