@@ -25,14 +25,14 @@ const getMenuItemByID = function(id) {
 };
 
 //Edit a menu item
-
-const editMenuItemByID = (id, review) => {
-  return client.query('UPDATE reviews SET message = $1, rating = $2 WHERE id = $3 RETURNING *',
-  [review.message, review.rating, id])
+const editMenuItemByID = (id, item) => {
+  return client.query('UPDATE menu_items SET description = $1, price = $2 WHERE id = $3 RETURNING *',
+  [item.description, item.price, id])
     .then(reviews => {
       return reviews.rows;
     });
 };
+
 //Add a menu item
 const addMenuItem = function(item) {
   return client
