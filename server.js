@@ -6,8 +6,12 @@ const sassMiddleware = require('./lib/sass-middleware');
 const express = require('express');
 const morgan = require('morgan');
 <<<<<<< HEAD
+<<<<<<< HEAD
 const bodyParser = require('body-parser')
 =======
+=======
+const cookieSession = require('cookie-session');
+>>>>>>> login-route
 const bodyParser = require('body-parser');
 
 >>>>>>> menu-items-routes
@@ -29,6 +33,12 @@ app.use(
     isSass: false, // false => scss, true => sass
   })
 );
+app.use(
+  cookieSession({
+    name: 'session',
+    keys: ["key1"],
+  })
+);
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
@@ -42,7 +52,11 @@ const orderApiRoutes = require('./routes/orders-api');
 const reviewApiRoutes = require('./routes/reviews-api');
 =======
 const menuItemsApiRoutes = require('./routes/menu_items-api');
+<<<<<<< HEAD
 >>>>>>> menu-items-routes
+=======
+const loginApiRoutes = require('./routes/login-api');
+>>>>>>> login-route
 const usersRoutes = require('./routes/users');
 const testRoutes = require('./routes/test');
 
@@ -59,7 +73,11 @@ app.use('/api/orders', orderApiRoutes);
 app.use('/api/reviews', reviewApiRoutes);
 =======
 app.use('/api/menu_items', menuItemsApiRoutes);
+<<<<<<< HEAD
 >>>>>>> menu-items-routes
+=======
+app.use('/api/login', loginApiRoutes);
+>>>>>>> login-route
 app.use('/users', usersRoutes);
 app.use('/test', testRoutes);
 // Note: mount other resources here, using the same pattern above
