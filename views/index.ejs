@@ -7,10 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Luigis</title>
 
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+
   <link rel="stylesheet" href="/styles/nav.css" />
   <link rel="stylesheet" href="/styles/layout.css" />
   <link rel="stylesheet" href="/styles/header.css" />
   <link rel="stylesheet" href="/styles/footer.css" />
+
+  <script type="text/javascript" src="/scripts/order-items.js"></script>
 
   <!-- Bungee -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +35,7 @@
     <p>Menu</p>
     <p>Reviews</p>
     <p>Login</p>
-    <p><i class="fa-solid fa-cart-shopping"></i></p>
+    <p><i class="fa-solid fa-cart-shopping icon"></i></p>
   </nav>
 
   <div class="body-container">
@@ -52,7 +57,7 @@
               </div>
               <div class="img">
                 <img src="/images/linguine.png" alt="Image" width="110px" height="110px">
-                <p>Add <i class="fa-solid fa-cart-shopping icon"></i></p>
+                <p data-name="Luigi's Linguini" data-price="¢20000">Add <i class="fa-solid fa-cart-shopping icon"></i></p>
               </div>
             </article>
             <article class="item">
