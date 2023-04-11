@@ -42,6 +42,7 @@ const widgetApiRoutes = require('./routes/widgets-api');
 const customerApiRoutes = require('./routes/customers-api');
 const menuItemsApiRoutes = require('./routes/menu_items-api');
 const loginApiRoutes = require('./routes/login-api');
+const logoutApiRoutes = require('./routes/logout-api');
 const usersRoutes = require('./routes/users');
 const testRoutes = require('./routes/test');
 
@@ -53,6 +54,7 @@ app.use('/api/widgets', widgetApiRoutes);
 app.use('/api/customers', customerApiRoutes);
 app.use('/api/menu_items', menuItemsApiRoutes);
 app.use('/api/login', loginApiRoutes);
+app.use('/api/logout', logoutApiRoutes);
 app.use('/users', usersRoutes);
 app.use('/test', testRoutes);
 // Note: mount other resources here, using the same pattern above
