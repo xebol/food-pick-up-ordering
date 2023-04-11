@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="/styles/layout.css" />
   <link rel="stylesheet" href="/styles/header.css" />
   <link rel="stylesheet" href="/styles/footer.css" />
+  <link rel="stylesheet" href="/styles/reviews.css" />
+  <script src="/vendor/jquery-3.0.0.js"></script>
+  <script type="text/javascript" src="/scripts/newReview.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Bungee -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -165,32 +169,33 @@
           </div>
         </div>
       </section>
-      <section id="reviews" class="new-reviews">
+      <form id="review-form">
+      <section class="new-reviews">
         <div>
-          <textarea name="text" id="review-text" placeholder="Leave us a review!"></textarea>
+          <textarea name="first-name" class="review-text" placeholder="First name"></textarea>
+          <textarea name="reviewMessage" class="review-text" placeholder="Leave us a review!"></textarea>
         </div>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </section>
-      <article class="reviews">
-        <div class="review">
-          <h3>Mario</h3>
-          <p>Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-          <p>Wow! It's the best restaurant in the Mushroom Kingdom!</p>
-          <p>August 1, 2020</p>
-        </div>
-        <div class="review">
-          <h3>Yoshi</h3>
-          <p>Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-          <p>Amazing service! Perfect for a dino on the move like me</p>
-          <p>July 27, 2020</p>
-        </div>
-      </article>
 
-      </section>
+        <div class="rate">
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text"></label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text"></label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text"></label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text"></label>
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text"></label>
+      </div>
+      <div id="error-message">Please enter a review!</div>
+        <div>
+          <button type="submit" id="leave-review">Submit</button>
+        </div>
+      </form>
+       </section>
+        <article class="reviews">loading... </article>
+          </section>
 
       <footer>
         <h3>Address</h3>

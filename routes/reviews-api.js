@@ -14,7 +14,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-//set up code that responds to a get request '/api/orders'
+//set up code that responds to a get request '/api/reviews'
 router.get('/', (req, res) => {
   reviewQueries.getReviews()
     .then(reviews => {
@@ -29,9 +29,18 @@ router.get('/', (req, res) => {
 
 
 router.post('/', (req, res) => {
+const userID = req.session.userID
   //Using bodyParser = require('body-parser') in server.js
   //cart should be dealt with on the front end and then tallied and sent to the back end
-  const newReview = req.body;
+  const temp = req.body;
+  console.log("TEMP", temp);
+  let newReview = {
+    customer_id: 1,
+      message: req.body.reviewMessage,
+    rating: 4, //Hardcoded
+    date: '2023-04-11' //Harcoded
+  };
+  console.log("NEW REVIEW", newReview);
   reviewQueries
     .addReview(newReview)
     .then((review) => {

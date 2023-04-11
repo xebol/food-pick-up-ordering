@@ -1,14 +1,14 @@
 const client = require('../connection');
 
 const getReviews = () => {
-  return client.query('SELECT * FROM reviews')
+  return client.query('SELECT *, customers.name FROM reviews JOIN customers ON customers.id = customer_id')
     .then(reviews => {
       return reviews.rows;
     });
 };
 
 const getReviewByID = (id) => {
-  return client.query('SELECT * FROM reviews WHERE id = $1', [id])
+  return client.query('SELECT *, customers.name FROM reviews JOIN customers ON customers.id = customer_id WHERE id = $1', [id])
     .then(reviews => {
       return reviews.rows;
     });

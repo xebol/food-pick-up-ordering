@@ -47,6 +47,7 @@ const logoutApiRoutes = require('./routes/logout-api');
 const usersRoutes = require('./routes/users');
 const testRoutes = require('./routes/test');
 
+// const timeAgo = new TimeAgo('en-US')
 
 // Mount all resource routes
 // Note: Feel free to replace the example routes below with your own
