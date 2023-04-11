@@ -8,6 +8,10 @@ body {
   background-color: transparent;
 }
 
+#menu-order {
+  display: flex;
+  align-items: baseline;
+}
 .menu-items {
   display: flex;
   align-items: center;

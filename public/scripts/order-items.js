@@ -1,16 +1,29 @@
-//   <script>
-//   $(document).ready (function (){
-//     console.log('loaded');
-//     $('.add').click(function() {
-//       console.log('Added to Cart')
-//       $(this).attr('data-name')
-//       console.log('data-name', $(this).attr('data-name'))
-//     })
-//   })
-// {/* </script> */}
+// const { response } = require("express");
 
 $(document).ready(function() {
-  $('.icon').click(function() {
-    console.log('You clicked on the cart');
+
+  $('.menu-items').on('click', () => {
+    $.ajax({
+      method: 'GET',
+      url: '/api/orders'
+    })
+      .done((response) => {
+        console.log(response)
+        const $orderList = $('.order-items');
+        $orderList.empty();
+
+        $orderList.append(`<h2>${response.orders[0].id}</h2>`);
+
+      //   for (const order of response.orders) {
+      //     $orderList.append(`<h2>${order.id}</h2>`);
+      //   }
+      });
   });
+
+
+
+
+
+
 });
+
