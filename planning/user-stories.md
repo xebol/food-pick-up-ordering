@@ -7,21 +7,21 @@
 -As a customer I want to be able to browse a menu, because that's how menus work.
 -As a customer I want to be able to add and remove things from my cart, because I am indecisive.
 -As a customer I would like to be able to see my total before I pay, because I keep track of my finances.
+-As a customer I would like to be able to confirm my order before I pay, because I have commitment issues.
 -As a customer I want to receive a text telling me when my order is be ready, because then I will know when to pick it up.
 -As a customer I want to be able to check the website to confirm my order is placed, because I worry that my food isn't being made.
 -As a customer I want to be able to order as a guest, because I don't like giving away my info.
--AS a customer I want to be able to leave a review, because I like to talk.
+-AS a customer I want to be able to leave a review with a rating, because I like to talk.
 
--As an restaurant I want edit the menu because I want to update prices and menu items.
--As an restaurant I want to be able to receive orders by text, because it confirms the order.
--As an restaurant I want to be able to see all active orders, because I want to count all the money I'm going to make.
--As an restaurant I want to be able to alert the customers when their food is ready, because then food doesn't get cold.
-
-rating, favourite orders, previous orders, pay online, confirm order, point system, build out accessability.
+-As a restaurant I want edit the menu because I want to update prices and menu items.
+-As a restaurant I want to be able to receive orders by text, because it confirms the order.
+-As a restaurant I want to be able to see all active orders, because I want to count all the money I'm going to make.
+-As a restaurant I want to be able to alert the customers when their food is ready, because then food doesn't get cold.
 
 ---stretch---
 -As a customer I want to see a timer start when my order is placed, because I want to know when to pick up my food.
-
+-As a customer I want to add my favourite orders, because I have preferences.
+-As a customer I want to see my previous orders, because I'm a bit forgetful.
 
 
 <!-- 
