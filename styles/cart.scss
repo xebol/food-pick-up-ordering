@@ -3,7 +3,7 @@
 }
 .cart {
 height: 800px;
-width: 30%;
+width: 25vw;
 background-color: transparent;
 display: flex;
 align-items: center;
@@ -11,6 +11,14 @@ flex-direction: column;
 justify-content: space-between;
 border: 5px solid rgb(113, 76, 30);
 border-radius: 10px;
+}
+
+.menu-items {
+  width: 70vw;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #pending-order{
