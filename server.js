@@ -5,6 +5,7 @@ require('dotenv').config();
 const sassMiddleware = require('./lib/sass-middleware');
 const express = require('express');
 const morgan = require('morgan');
+const cookieSession = require('cookie-session');
 const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 8080;
@@ -25,6 +26,12 @@ app.use(
     isSass: false, // false => scss, true => sass
   })
 );
+app.use(
+  cookieSession({
+    name: 'session',
+    keys: ["key1"],
+  })
+);
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
@@ -34,6 +41,7 @@ const userApiRoutes = require('./routes/users-api');
 const widgetApiRoutes = require('./routes/widgets-api');
 const customerApiRoutes = require('./routes/customers-api');
 const menuItemsApiRoutes = require('./routes/menu_items-api');
+const loginApiRoutes = require('./routes/login-api');
 const usersRoutes = require('./routes/users');
 const testRoutes = require('./routes/test');
 
@@ -44,6 +52,7 @@ app.use('/api/users', userApiRoutes);
 app.use('/api/widgets', widgetApiRoutes);
 app.use('/api/customers', customerApiRoutes);
 app.use('/api/menu_items', menuItemsApiRoutes);
+app.use('/api/login', loginApiRoutes);
 app.use('/users', usersRoutes);
 app.use('/test', testRoutes);
 // Note: mount other resources here, using the same pattern above
