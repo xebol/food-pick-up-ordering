@@ -12,12 +12,6 @@ router.get('/:id', (req, res) => {
 
       req.session.userId = user.id;
       console.log(`${user.name} successfully logged in`);
-      // res.send({
-      //   id: user.id,
-      //   name: user.name,
-      //   email: user.email_address,
-      //   admin: user.admin_access
-      //  });
       res.redirect('/');
     })
     .catch((err) => {

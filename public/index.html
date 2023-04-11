@@ -17,30 +17,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
-
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- External JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- App JS  -->
+  <script src="/network.js"></script>
+
+  <script src="/scripts/nav.js"></script>
 
 </head>
 
 <body>
-  <nav>
-    <span class="logo">Luigi's</span>
-    <p>About</p>
-    <p>Menu</p>
-    <p>Reviews</p>
-    <p>Login</p>
-    <p><i class="fa-solid fa-cart-shopping"></i></p>
-  </nav>
+  <nav id="nav-bar"></nav>
 
   <div class="body-container">
-    <header class="header">
+    <header id="header" class="header">
       <h1>LUIGI's</h1>
-      <p id="desc">About Us Descripion</p>
+      <p id="desc">About Us Description</p>
     </header>
 
     <main class="container">
-      <section class="menu-items">
+      <section id="menu" class="menu-items">
         <div class="items">
           <h1>MENU</h1>
           <div class="menu-style">
@@ -165,28 +165,30 @@
           </div>
         </div>
       </section>
-      <section class="new-reviews">
+      <section id="reviews" class="new-reviews">
         <div>
           <textarea name="text" id="review-text" placeholder="Leave us a review!"></textarea>
         </div>
         <div>
           <button type="submit">Submit</button>
         </div>
-       </section>
-        <article class="reviews">
-          <div class="review">
-            <h3>Mario</h3>
-            <p>Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-            <p>Wow! It's the best restaurant in the Mushroom Kingdom!</p>
-            <p>August 1, 2020</p>
-          </div>
-          <div class="review">
-            <h3>Yoshi</h3>
-            <p>Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-            <p>Amazing service! Perfect for a dino on the move like me</p>
-            <p>July 27, 2020</p>
-          </div>
-        </article>
+      </section>
+      <article class="reviews">
+        <div class="review">
+          <h3>Mario</h3>
+          <p>Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+          <p>Wow! It's the best restaurant in the Mushroom Kingdom!</p>
+          <p>August 1, 2020</p>
+        </div>
+        <div class="review">
+          <h3>Yoshi</h3>
+          <p>Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+          <p>Amazing service! Perfect for a dino on the move like me</p>
+          <p>July 27, 2020</p>
+        </div>
+      </article>
 
       </section>
 
@@ -199,7 +201,8 @@
         <p class="desc">24/7</p>
         <div id="icons">
           <div class="footer-icon">
-            <i class="fa-brands fa-square-facebook"></i></div>
+            <i class="fa-brands fa-square-facebook"></i>
+          </div>
           <div class="footer-icon"><i class="fa-brands fa-square-instagram"></i>
           </div>
           <div class="footer-icon"><i class="fa-brands fa-square-twitter"></i></div>
