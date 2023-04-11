@@ -11,6 +11,6 @@
 
 $(document).ready(function() {
   $('.icon').click(function() {
-    console.log('You clicked on the cart')
-  })
+    console.log('You clicked on the cart');
+  });
 });
