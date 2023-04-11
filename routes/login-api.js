@@ -18,7 +18,7 @@ router.get('/:id', (req, res) => {
       //   email: user.email_address,
       //   admin: user.admin_access
       //  });
-      res.redirect('/')
+      res.redirect('/');
     })
     .catch((err) => {
       console.log(err);

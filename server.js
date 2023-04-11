@@ -5,16 +5,9 @@ require('dotenv').config();
 const sassMiddleware = require('./lib/sass-middleware');
 const express = require('express');
 const morgan = require('morgan');
-<<<<<<< HEAD
-<<<<<<< HEAD
 const bodyParser = require('body-parser')
-=======
-=======
 const cookieSession = require('cookie-session');
->>>>>>> login-route
 const bodyParser = require('body-parser');
-
->>>>>>> menu-items-routes
 const PORT = process.env.PORT || 8080;
 const app = express();
 
@@ -47,16 +40,11 @@ app.use(bodyParser.json());
 // const userApiRoutes = require('./routes/users-api');
 // const widgetApiRoutes = require('./routes/widgets-api');
 const customerApiRoutes = require('./routes/customers-api');
-<<<<<<< HEAD
 const orderApiRoutes = require('./routes/orders-api');
 const reviewApiRoutes = require('./routes/reviews-api');
-=======
 const menuItemsApiRoutes = require('./routes/menu_items-api');
-<<<<<<< HEAD
->>>>>>> menu-items-routes
-=======
 const loginApiRoutes = require('./routes/login-api');
->>>>>>> login-route
+const logoutApiRoutes = require('./routes/logout-api');
 const usersRoutes = require('./routes/users');
 const testRoutes = require('./routes/test');
 
@@ -68,16 +56,11 @@ const testRoutes = require('./routes/test');
 // app.use('/api/widgets', widgetApiRoutes);
 app.use(bodyParser.json())
 app.use('/api/customers', customerApiRoutes);
-<<<<<<< HEAD
 app.use('/api/orders', orderApiRoutes);
 app.use('/api/reviews', reviewApiRoutes);
-=======
 app.use('/api/menu_items', menuItemsApiRoutes);
-<<<<<<< HEAD
->>>>>>> menu-items-routes
-=======
 app.use('/api/login', loginApiRoutes);
->>>>>>> login-route
+app.use('/api/logout', logoutApiRoutes);
 app.use('/users', usersRoutes);
 app.use('/test', testRoutes);
 // Note: mount other resources here, using the same pattern above
