@@ -3,7 +3,7 @@ $(() => {
   $('#fetch-users').on('click', () => {
     $.ajax({
       method: 'GET',
-      url: '/api/users'
+      url: '/api/customers'
     })
     .done((response) => {
       const $usersList = $('#users');
