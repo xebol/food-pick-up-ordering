@@ -17,9 +17,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
-
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- External JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- App JS  -->
+  <script src="/scripts/nav.js"></script>
 
 </head>
 
@@ -30,19 +35,19 @@
       <p><a href="#header">About</a></p>
       <p><a href="#menu">Menu</a></p>
       <p><a href="#reviews">Reviews</a></p>
-      <p>Login</p>
+      <p id="logout">Login</p>
       <p><i class="fa-solid fa-cart-shopping"></i></p>
     </div>
   </nav>
 
   <div class="body-container">
-    <header class="header">
+    <header id="header" class="header">
       <h1>LUIGI's</h1>
       <p id="desc">About Us Descripion</p>
     </header>
 
     <main class="container">
-      <section class="menu-items">
+      <section id="menu" class="menu-items">
         <div class="items">
           <h1>MENU</h1>
           <div class="menu-style">
@@ -167,7 +172,7 @@
           </div>
         </div>
       </section>
-      <section class="new-reviews">
+      <section id="reviews" class="new-reviews">
         <div>
           <textarea name="text" id="review-text" placeholder="Leave us a review!"></textarea>
         </div>
