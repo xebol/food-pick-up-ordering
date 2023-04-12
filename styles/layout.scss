@@ -17,10 +17,8 @@ body {
 
 .items {
 display: flex;
-align-items: center;
 justify-content: center;
-flex-direction: column;
-
+flex-wrap: wrap;
 }
 
 .menu-items h1 {
@@ -39,7 +37,6 @@ align-items: center;
 
 .item {
   background-color: rgb(231, 186, 160);
-  width: 120%;
   color: #0c0b0b;
   display: flex;
   justify-content: space-around;
@@ -50,6 +47,7 @@ align-items: center;
   margin: 10px;
   color: #4c310f;
   padding: 1em;
+  flex: 1;
 }
 
 .item:hover {
