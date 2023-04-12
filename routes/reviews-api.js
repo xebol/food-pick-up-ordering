@@ -35,15 +35,12 @@ router.post('/', (req, res) => {
   const temp = req.body;
   console.log("TEMP", temp);
   let newReview = {
-<<<<<<< HEAD
     customer_id: userId,
     message: req.body.reviewMessage,
     rating: 4, //Hardcoded
-=======
     customer_id: 1,
       message: req.body.reviewMessage,
     rating: 4,
->>>>>>> reviews
     date: '2023-04-11' //Harcoded
   };
   console.log("NEW REVIEW", newReview);
