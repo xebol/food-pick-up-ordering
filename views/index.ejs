@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/styles/header.css" />
   <link rel="stylesheet" href="/styles/footer.css" />
   <link rel="stylesheet" href="/styles/cart.css" />
+
   <!-- Bungee -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +22,10 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <script type="text/javascript" src="scripts/menu-items.js"></script>
 </head>
 
 <body>
@@ -165,7 +170,7 @@
             </div>
           </div>
         </section>
-        <section class="cart">
+        <section class="cart" id="current-order">
           <h1 id="pending-order">ORDER</h1>
           <div class="order-items">
           </div>
