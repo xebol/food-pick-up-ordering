@@ -44,8 +44,8 @@ $(document).ready(function() {
       return div.innerHTML;
     };
 
-    const dynamicReview =  `<div>
-      <h3>${escape(review.customer_id)}</h3>
+    const dynamicReview =  `<div class="review">
+      <h3>${escape(review.name)}</h3>
       <p>${escape(review.message)}</p>
       <p>${timeAgo}</p>
       </div>`

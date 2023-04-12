@@ -26,8 +26,8 @@ const getMenuItemByID = function(id) {
 
 //Edit a menu item
 const editMenuItemByID = (id, item) => {
-  return client.query('UPDATE menu_items SET description = $1, price = $2 WHERE id = $3 RETURNING *',
-  [item.description, item.price, id])
+  return client.query('UPDATE menu_items SET description = $1, foodImageName = $2 price = $3 WHERE id = $4 RETURNING *',
+  [item.description, item.foodImageName, item.price, id])
     .then(reviews => {
       return reviews.rows;
     });

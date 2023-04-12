@@ -29,14 +29,14 @@ router.get('/', (req, res) => {
 
 
 router.post('/', (req, res) => {
-const userID = req.session.userID
+  const userId = req.session.userId;
   //Using bodyParser = require('body-parser') in server.js
   //cart should be dealt with on the front end and then tallied and sent to the back end
   const temp = req.body;
   console.log("TEMP", temp);
   let newReview = {
-    customer_id: 1,
-      message: req.body.reviewMessage,
+    customer_id: userId,
+    message: req.body.reviewMessage,
     rating: 4, //Hardcoded
     date: '2023-04-11' //Harcoded
   };
