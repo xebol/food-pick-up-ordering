@@ -20,7 +20,7 @@ $(document).ready(function() {
           <p>¢${item.price}</p>
         </div>
         <div class="img">
-          <img src="/images/linguine.png" alt="Image" width="110px" height="110px">
+          <img src="${item.food_image_name}" alt="Image" width="110px" height="110px">
           <p>Add <i class="fa-solid fa-cart-shopping icon id=${item.id}"></i></p>
         </div>
       </article>`);
