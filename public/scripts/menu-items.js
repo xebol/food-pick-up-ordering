@@ -17,7 +17,7 @@ $(document).ready(function() {
         <div class="details">
           <h2>${item.name}</h2>
           <p>${item.description}.</p>
-          <p>${item.price}</p>
+          <p>¢${item.price}</p>
         </div>
         <div class="img">
           <img src="/images/linguine.png" alt="Image" width="110px" height="110px">
