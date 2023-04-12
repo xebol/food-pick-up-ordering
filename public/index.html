@@ -19,11 +19,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="/styles/cart.css" />
 
-  <!-- Bungee -->
+  <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Corinthia:wght@700&family=Mea+Culpa&family=Press+Start+2P&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+    rel="stylesheet">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
@@ -46,13 +47,26 @@
 
   <div class="body-container">
     <header id="header" class="header">
-      <h1>LUIGI's</h1>
-      <p id="desc">About Us Description</p>
+      <h1>Luigi's</h1>
+      <h6 id="about-us-header">About Us</h6>
+      <p id="desc">
+
+      Luigi's restaurant in the Mushroom Kingdom is a delightful dining spot that
+      offers a unique experience to its visitors. The restaurant is the latest venture of Luigi,
+      a beloved figure in the kingdom, known for his skills as a plumber, doctor, ghost hunter, racecar driver,
+      pro tennis player and MUCH more.
+      <br>
+      <br>
+      Now, Luigi brings his love for exploration and his passion for quality food to his restaurant.
+      The menu features dishes made with locally-sourced ingredients that highlight the
+      flavors of the Mushroom Kingdom. From classic linguini to innovative creations like Dry Bone's Marrow,
+      the dishes are expertly crafted and bursting with flavors.
+      </p>
     </header>
 
     <main class="container">
       <section id="menu" class="menu-items">
-        <h1>MENU</h1>
+        <h1 id="menu-header">MENU</h1>
         <div class="items">
         </div>
       </section>
@@ -121,7 +135,6 @@
             <input type="radio" id="star5" name="rate" value="5" />
             <label for="star5" title="text"></label>
           </div>
-          <div id="error-message">Please enter a review!</div>
           <div>
             <button type="submit" id="leave-review">Submit</button>
           </div>
