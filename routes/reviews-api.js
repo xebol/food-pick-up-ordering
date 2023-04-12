@@ -37,7 +37,7 @@ const userID = req.session.userID
   let newReview = {
     customer_id: 1,
       message: req.body.reviewMessage,
-    rating: 4, //Hardcoded
+    rating: 4,
     date: '2023-04-11' //Harcoded
   };
   console.log("NEW REVIEW", newReview);
