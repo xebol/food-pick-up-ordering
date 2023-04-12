@@ -1,5 +1,5 @@
 INSERT INTO menu_items (name, description, price)
-VALUES('Luigi''s Linguini', 'Fresh-made pasta in a Goomba cream sauce', 20000),
+VALUES('Luigi''s Linguini', 'Fresh-made pasta in a Goomba cream sauce', '/images/linguine.png', 20000),
 ('Slippy Banana Splitty', 'Ripe banana with vanilla ice cream and chocolate from the mountain', 15000),
 ('Toad''s Taters', 'Fried to crispy golden perfection', 14000),
 ('Bowser Burger', 'Makes you breathe fire like King Koopa', 24000),

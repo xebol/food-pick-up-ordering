@@ -14,7 +14,8 @@
 .review {
   background-color: rgb(231, 186, 160);
   padding-top: 23px;
-  max-width: 50%;
+  height: 200px;
+  max-width: 30%;
   color: #0c0b0b;
   display: flex;
   flex-direction: column;
@@ -31,7 +32,7 @@
 
 .review h3 {
   font-family: Bungee;
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
 }
 
