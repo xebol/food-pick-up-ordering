@@ -5,7 +5,6 @@ $(document).ready(function() {
     url: '/api/menu_items' //extract the id from the target
   })
     .done((items) => {
-      console.log('items', items);
 
       renderOrders(items.items);
     });
@@ -21,7 +20,7 @@ $(document).ready(function() {
         </div>
         <div class="img">
           <img src="${item.food_image_name}" alt="Image" width="110px" height="110px">
-          <p>Add <i class="fa-solid fa-cart-shopping icon id=${item.id}"></i></p>
+          <p>Add <i class="fa-solid fa-cart-shopping icon" id="${item.id}"></i></p>
         </div>
       </article>`);
 
