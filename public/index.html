@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="/styles/reviews.css" />
   <script src="/vendor/jquery-3.0.0.js"></script>
   <script type="text/javascript" src="/scripts/newReview.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="/styles/cart.css" />
 
   <!-- Bungee -->
@@ -49,21 +51,59 @@
     </header>
 
     <main class="container">
-        <section id="menu" class="menu-items">
-          <h1>MENU</h1>
-          <div class="items">
+      <section id="menu" class="menu-items">
+        <h1>MENU</h1>
+        <div class="items">
+        </div>
+      </section>
+
+      <section class="cart" id="current-order">
+        <h1 id="pending-order">ORDER</h1>
+        <div class="order-items">
+          <div class="order-item">
+            <h2>Bowser Burger</h2>
+            <div class="order-item-p">
+              <p>-</p>
+              <p>1</p>
+              <p>+</p>
+            </div>
+            <i class="fa-solid fa-trash-can"></i>
           </div>
-        </section>
-        <section class="cart" id="current-order">
-          <h1 id="pending-order">ORDER</h1>
-          <div class="order-items">
+          <div class="order-item">
+            <h2>Bowser Burger</h2>
+            <div class="order-item-p">
+              <p>-</p>
+              <p>1</p>
+              <p>+</p>
+            </div>
+            <i class="fa-solid fa-trash-can"></i>
           </div>
-          <div id="checkout">
-            <p>Proceed to Checkout</p>
-            <i class="fa-solid fa-cart-shopping" id="icon"></i>
-            <output name="counter" class="counter" for="menu-items" id="character">0</output>
+          <div class="order-item">
+            <h2>Bowser Burger</h2>
+            <div class="order-item-p">
+              <p>-</p>
+              <p>1</p>
+              <p>+</p>
+            </div>
+            <i class="fa-solid fa-trash-can"></i>
           </div>
-        </section>
+          <div class="order-item">
+            <h2>Bowser Burger</h2>
+            <div class="order-item-p">
+              <p>-</p>
+              <p>1</p>
+              <p>+</p>
+            </div>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+        </div>
+        <div id="checkout">
+          <p>Proceed to Checkout</p>
+          <i class="fa-solid fa-cart-shopping" id="icon"></i>
+          <output name="counter" class="counter" for="menu-items" id="character">0</output>
+        </div>
+      </section>
+
       <section class="new-reviews">
         <div>
           <textarea name="first-name" class="review-text" placeholder="First name"></textarea>
@@ -81,15 +121,15 @@
           <label for="star4" title="text"></label>
           <input type="radio" id="star5" name="rate" value="5" />
           <label for="star5" title="text"></label>
-      </div>
-      <div id="error-message">Please enter a review!</div>
+        </div>
+        <div id="error-message">Please enter a review!</div>
         <div>
           <button type="submit" id="leave-review">Submit</button>
         </div>
-      </form>
-       </section>
-        <article class="reviews">loading... </article>
-          </section>
+        </form>
+      </section>
+      <article class="reviews">loading... </article>
+      </section>
 
       <footer>
         <h3>Address</h3>
