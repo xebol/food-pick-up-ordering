@@ -33,11 +33,8 @@ $(document).ready(function() {
       url: `/api/menu_items/${menuItemID}`
     })
       .then((items) => {
-        console.log('AJAX response: ', items);
         //to store an data to the browser storage, turn it into a string
         localStorage.setItem(`${menuItemID}`, JSON.stringify(items));
-        //To view the the browser storage
-        // console.log('localStorage', localStorage);
         // const retrievedObject = JSON.parse(localStorage.getItem(`${menuItemID}`));
         // console.log('retrievedObject', retrievedObject);
         renderItem(items.item);
@@ -46,10 +43,12 @@ $(document).ready(function() {
   });
 
   $('.cart').on('click', '.fa-trash-can', function() {
-
-    let temp = $(this).attr("id");
-    console.log("trash can id ", temp);
+    let itemToDelete = $(this).attr('id');
+    //Remove item from localStorage
+    localStorage.removeItem(itemToDelete);
+    //Empty order-item container
     $(this).parent().empty();
+    // console.log('Updated localStorage', localStorage);
   });
 
 });
