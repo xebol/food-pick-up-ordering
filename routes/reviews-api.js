@@ -38,12 +38,8 @@ router.post('/', (req, res) => {
     customer_id: userId,
     message: req.body.reviewMessage,
     rating: 4, //Hardcoded
-    customer_id: 1,
-      message: req.body.reviewMessage,
-    rating: 4,
     date: '2023-04-11' //Harcoded
   };
-  console.log("NEW REVIEW", newReview);
   reviewQueries
     .addReview(newReview)
     .then((review) => {
