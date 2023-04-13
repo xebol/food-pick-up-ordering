@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  console.log('Document is ready: The Sequel');
   //clear the browser storage
   localStorage.clear();
 
@@ -50,6 +49,8 @@ $(document).ready(function() {
     $(this).parent().empty();
     // console.log('Updated localStorage', localStorage);
   });
+
+
 
 });
 
