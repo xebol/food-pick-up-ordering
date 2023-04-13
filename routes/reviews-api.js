@@ -27,21 +27,17 @@ router.get('/', (req, res) => {
     });
 });
 
-
 router.post('/', (req, res) => {
   const userId = req.session.userId;
   //Using bodyParser = require('body-parser') in server.js
   //cart should be dealt with on the front end and then tallied and sent to the back end
-  const temp = req.body;
-  console.log("TEMP", temp);
   let newReview = {
     customer_id: userId,
     message: req.body.reviewMessage,
     rating: 4, //Hardcoded
     date: '2023-04-11' //Harcoded
   };
-  reviewQueries
-    .addReview(newReview)
+  reviewQueries.addReview(newReview)
     .then((review) => {
       res.send(review);
     })
