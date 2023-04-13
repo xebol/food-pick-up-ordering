@@ -3,7 +3,7 @@ $(document).ready(function() {
   console.log('Document is ready to render orders');
 
   //Get admin-order-template from the DOM
-  const $orderContainer = $('.admin-order-template');
+
 
   //Create each order item display
   const createOrder = function(order) {
@@ -21,22 +21,24 @@ $(document).ready(function() {
 
   //Loop through all orders, creating HTML with each, and add to orderContainer
   const renderOrders = function(orders) {
+    const $orderContainer = $('.admin-order-template');
     for (const order of orders.orders) {
-      console.log('renderOrders order', order)
       const $order = createOrder(order);
-      console.log('renderOrders $order', $order)
+      console.log('renderOrders $order', $order);
       $orderContainer.append($order);
     }
   };
 
   const loadOrders = function() {
+    // alert('TEST')
     $.ajax({
       method: 'GET',
       url: '/api/orders'
     }).then((orders) => {
       //Remove all children from orderContainer;
-      $orderContainer.empty();
-      renderOrders(orders);
+      setTimeout(() => {
+        renderOrders(orders);
+      }, 100)
     }).catch((err) => {
       console.log(err);
     });
