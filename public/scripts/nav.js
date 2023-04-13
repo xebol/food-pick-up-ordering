@@ -1,10 +1,7 @@
 $(document).ready(function() {
 
-  console.log('Document is ready to use jQUery');
-
   const $pageNav = $('#nav-bar');
   function updateNav(user) {
-    $pageNav.find(".nav-items").remove();
     let navLinks;
 
     if (!user) {
@@ -17,7 +14,6 @@ $(document).ready(function() {
       <p id="login">Login</p>
       </div>
       `;
-      console.log('Please sign in');
     } else if (user.admin === true) {
       navLinks = `
       <span class="logo"><img src="/images/luigichef.webp" alt="Image" width="110px" height="110px"></span>
@@ -25,7 +21,6 @@ $(document).ready(function() {
       <p id="logout">Logout</p>
       </div>
       `;
-      console.log('USER:', user.admin);
     } else {
       navLinks = `
       <span class="logo"><img src="/images/luigichef.webp" alt="Image" width="110px" height="110px"></span>
@@ -37,7 +32,6 @@ $(document).ready(function() {
       <p><i class="fa-solid fa-cart-shopping"></i></p>
       </div>
       `;
-      console.log('USER:', user.admin);
     }
 
     $pageNav.append(navLinks);
@@ -52,7 +46,7 @@ $(document).ready(function() {
 
   $('#nav-bar').on('click', '#logout', function() {
     logOut()
-      .then((result) => {
+      .then(() => {
         window.location.href = "http://localhost:8080/";
       })
       .catch((err) => {
