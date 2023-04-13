@@ -8,7 +8,7 @@ $(document).ready(function() {
   //makes a review object that is then passed to the database
   const createReviewElement = function(review) {
 
-    console.log("createReviewElement", review);
+    // console.log("createReviewElement", review);
     //timestamps
     const timeAgo = timeago.format(review.date);
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
       method: 'GET',
       url: '/api/reviews',
     }).then((reviews) => {
-      console.log("reviews from db", reviews);
+      // console.log("reviews from db", reviews);
       renderReviews(reviews);
     });
   };
@@ -72,7 +72,7 @@ $(document).ready(function() {
       url: '/api/reviews',
       data: encodedURL,
     }).then((response) => {
-      console.log('Successfully added review: ', response);
+      // console.log('Successfully added review: ', response);
       loadReviews();
     }).catch((err) => {
       console.log(err);

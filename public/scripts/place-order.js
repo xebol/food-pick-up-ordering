@@ -33,7 +33,19 @@ $(document).ready(function() {
     })
       .then((items) => {
         //to store an data to the browser storage, turn it into a string
-        localStorage.setItem(`${menuItemID}`, JSON.stringify(items));
+        localStorage.setItem(`${menuItemID}`, JSON.stringify(items)); //this code is not storing cart items
+        //update the cart
+
+        // if (localStorage = undefined){
+        //   cart = []
+        // }
+        // const cart = JSON.parse(localStorage.getItem(items))
+        // cart.push(menuItem.name)
+        // localStorage.setItem('cart', JSON.stringify(cartData))
+
+        // get cartData from localStorage, parse, push menuItem.name to array
+
+
         // const retrievedObject = JSON.parse(localStorage.getItem(`${menuItemID}`));
         // console.log('retrievedObject', retrievedObject);
         renderItem(items.item);
