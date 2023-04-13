@@ -27,6 +27,7 @@ router.get('/', (req, res) => {
     });
 });
 
+//Add a new review to reviews database
 router.post('/', (req, res) => {
   const userId = req.session.userId;
   //Using bodyParser = require('body-parser') in server.js
