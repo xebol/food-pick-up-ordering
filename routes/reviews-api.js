@@ -37,6 +37,7 @@ router.post('/', (req, res) => {
     rating: 4, //Hardcoded
     date: '2023-04-11' //Harcoded
   };
+  console.log("newReview", newReview)
   reviewQueries.addReview(newReview)
     .then((review) => {
       res.send(review);

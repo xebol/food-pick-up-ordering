@@ -60,10 +60,11 @@ $(document).ready(function() {
     // const $reviewLength = $('textarea').val().length;
 
     // if ($reviewLength <= 0) {
-    //   return displayError("Please leave us a review!");
-    // }
-    //turns encoded url into a serialized string
-    const encodedURL = $('#review-form').serialize();
+      //   return displayError("Please leave us a review!");
+      // }
+      //turns encoded url into a serialized string
+      const encodedURL = $('#review-form').serialize();
+      console.log("ENCODEDURL", encodedURL)
     $('.review-text').val('');
     //ajax method to actually post the created tweet after the button has been pressed
     $.ajax({
