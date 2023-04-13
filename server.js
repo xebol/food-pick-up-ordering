@@ -25,9 +25,6 @@ app.use(
     isSass: false, // false => scss, true => sass
   })
 );
-
-
-
 app.use(
   cookieSession({
     name: 'session',
