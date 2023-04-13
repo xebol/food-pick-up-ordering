@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Luigis</title>
 
+  <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/nes.css/css/nes.css"/>
   <link rel="stylesheet" href="/styles/nav.css" />
   <link rel="stylesheet" href="/styles/layout.css" />
   <link rel="stylesheet" href="/styles/header.css" />
@@ -22,9 +24,7 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bungee&family=Corinthia:wght@700&family=Mea+Culpa&family=Press+Start+2P&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Corinthia:wght@700&family=Mea+Culpa&family=Press+Start+2P&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
@@ -47,7 +47,7 @@
 
   <div class="body-container">
     <header id="header" class="header">
-      <h1>Luigi's</h1>
+      <h1 id="luigis">Luigi's</h1>
       <h6 id="about-us-header">About Us</h6>
       <p id="desc">
 
@@ -119,8 +119,9 @@
       </section>
       <section class="new-reviews">
         <form id="review-form">
-          <div>
-            <textarea name="reviewMessage" class="review-text" placeholder="Leave us a review!"></textarea>
+
+          <div class="nes-field is-inline">
+            <textarea type="text" id="inline_field" class="nes-input is-success" placeholder="Leave us a review!"></textarea>
           </div>
 
           <div class="rate">
