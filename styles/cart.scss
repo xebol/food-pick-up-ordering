@@ -50,7 +50,7 @@ margin: 0 0.5em;
   font-family: Bungee;
 }
 
-#checkout {
+ #submit-order {
   display: flex;
   align-items: center;
   justify-self: flex-end;
@@ -70,11 +70,11 @@ margin: 0 0.5em;
 }
 
 #icon:hover {
-  color: rgb(232, 163, 79)
+  color: rgb(164, 94, 8)
 }
 
-#checkout:hover {
-  background-color: #be250a;
+#submit-order:hover {
+  background-color: #c22a04;
 }
 
 .fa-trash-can:hover {
