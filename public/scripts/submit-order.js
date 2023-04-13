@@ -10,7 +10,7 @@ $(document).ready(function() {
     //When order is submitted clear the cart
     const $clearCart = $('.order-item')
     $clearCart.empty();
-    
+
 
   });
 
