@@ -16,7 +16,7 @@ margin-left: 2em;
 .order-items {
 width: 100%;
 padding: 0 1em;
-overflow: scroll;
+overflow: auto;
 }
 
 .order-item {
@@ -48,6 +48,7 @@ margin: 0 0.5em;
   align-items: flex-start;
   flex-direction: row-reverse;
   font-family: Bungee;
+  margin-bottom: 3em;
 }
 
  #submit-order {
