@@ -45,7 +45,6 @@ $(document).ready(function() {
       method: 'GET',
       url: '/api/reviews',
     }).then((reviews) => {
-      console.log("reviews from db", reviews);
       renderReviews(reviews);
     });
   };
@@ -64,7 +63,6 @@ $(document).ready(function() {
       // }
       //turns encoded url into a serialized string
       const encodedURL = $('#review-form').serialize();
-      console.log("ENCODEDURL", encodedURL)
     $('.review-text').val('');
     //ajax method to actually post the created tweet after the button has been pressed
     $.ajax({
