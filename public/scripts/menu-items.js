@@ -29,11 +29,12 @@ $(document).ready(function() {
   };
   const renderOrders = function(items) {
     const $menuList = $('.items');
-      $menuList.empty();
+    $menuList.empty();
     //loop through the orders
     for (const item of items) {
       //call createOrder on each item
       let $orderItem = createOrder(item);
+      console.log('Menu orderItem', $orderItem);
       $menuList.append($orderItem);
     }
   };
