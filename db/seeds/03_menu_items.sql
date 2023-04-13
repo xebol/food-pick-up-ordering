@@ -1,4 +1,4 @@
-INSERT INTO menu_items (name, description, food_image_name r, price)
+INSERT INTO menu_items (name, description, food_image_name, price)
 VALUES('Luigi''s Linguini', 'Fresh-made pasta in a Goomba cream sauce', '/images/linguine.png', 20000),
 ('Slippy Banana Splitty', 'Ripe banana with vanilla ice cream and chocolate from the mountain', '/images/banana-split.png', 15000),
 ('Toad''s Taters', 'Fried to crispy golden perfection', '/images/tater-tots.png', 14000),

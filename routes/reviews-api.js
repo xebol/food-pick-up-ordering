@@ -33,13 +33,14 @@ router.post('/', (req, res) => {
   //Using bodyParser = require('body-parser') in server.js
   //cart should be dealt with on the front end and then tallied and sent to the back end
   const temp = req.body;
-  console.log("TEMP", temp);
+  // console.log("TEMP", temp);
   let newReview = {
     customer_id: userId,
     message: req.body.reviewMessage,
     rating: 4, //Hardcoded
     date: '2023-04-11' //Harcoded
   };
+  console.log("NEW REVIEW", newReview);
   reviewQueries
     .addReview(newReview)
     .then((review) => {
