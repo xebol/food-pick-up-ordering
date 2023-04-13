@@ -11,7 +11,7 @@ $(document).ready(function() {
     const $clearCart = $('.order-item')
     $clearCart.empty();
 
-
+    
   });
 
 });
