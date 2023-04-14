@@ -8,20 +8,28 @@ $(document).ready(function() {
   $form.on('submit', (event) => {
     event.preventDefault();
 
-    //When order is submitted clear the cart
-    const $clearCart = $('.order-item');
-    $clearCart.empty();
+    const data = { ...localStorage };
+
+    console.log('data', data);
+    const parsedData = [];
+
+    for (const itemId in data) {
+      parsedData.push(JSON.parse(data[itemId]));
+    }
+    console.log('data', parsedData);
 
     $.ajax({
-      method: 'GET',
-      url: '/api/orders'
+      method: 'POST',
+      url: '/api/orders',
+      data: JSON.stringify(parsedData),
+      contentType: "application/json"
     })
       .then((response) => {
-        console.log('response', response);
-        console.log('Cart Items', localStorage);
-        console.log(JSON.parse(localStorage.getItem('2')));
+        console.log('Response', response);
+        //When order is submitted clear the cart
+        const $clearCart = $('.order-item');
+        $clearCart.empty();
+
       });
-
   });
-
 });
