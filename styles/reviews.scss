@@ -26,11 +26,15 @@
   margin: 10px;
   color: #4c310f;
   padding: 1em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: bungee;
   font-size: 20px;
+}
+.time-ago{
+  font-size: 12px;
 }
 #inline_field{
   background-color: transparent;
+  color: rgb(18, 18, 18)
 }
 .review h3 {
   font-family: 'Press Start 2P', cursive;
@@ -48,13 +52,12 @@
   border-right: 0;
   border-top: 0;
   background-color: transparent;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px;
   color: #4c310f;
  }
 
  .new-reviews {
-  background-color: rgb(231, 186, 160);
+  margin-left: 20%;
   padding-top: 23px;
   width: 50%;
   color: #0c0b0b;
@@ -62,53 +65,19 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-radius: 10px;
-  border: 5px solid rgb(113, 76, 30);
   color: #4c310f;
   padding: 1em;
   font-size: 18px;
  }
 
+ #toad{
+max-width: 10%;
+}
+
  #leave-review {
-  justify-content: center;
+ float: right;
   font-family: Bungee;
   color: white;
-  background-color: #4c310f;
+  background-color: #ba1e1e;
  }
-// stars/5 rating --------------
- .rate {
-  float: left;
-  height: 46px;
-  padding: 0 10px;
-}
-.rate:not(:checked) > input {
-  position:absolute;
-  top:-9999px;
-}
-.rate:not(:checked) > label {
-  float:right;
-  width:1em;
-  overflow:hidden;
-  white-space:nowrap;
-  cursor:pointer;
-  font-size:30px;
-  color:#ccc;
-}
-.rate:not(:checked) > label:before {
-  content: '★ ';
-}
-.rate > input:checked ~ label {
-  color: #ffc700;
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-  color: #deb217;
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-  color: #c59b08;
-}
 

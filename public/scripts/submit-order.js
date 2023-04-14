@@ -1,3 +1,4 @@
+// require('dotenv').config()
 $(document).ready(function() {
 
   console.log('Submit Order');
@@ -6,6 +7,7 @@ $(document).ready(function() {
   const $form = $('#submit');
 
   $form.on('submit', (event) => {
+    //do not refresh the page
     event.preventDefault();
 
     const data = { ...localStorage };

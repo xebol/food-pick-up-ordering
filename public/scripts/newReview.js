@@ -8,7 +8,7 @@ $(document).ready(function() {
   //makes a review object that is then passed to the database
   const createReviewElement = function(review) {
 
-    console.log("createReviewElement", review);
+    // console.log("createReviewElement", review);
     //timestamps
     const timeAgo = timeago.format(review.date);
 
@@ -22,7 +22,8 @@ $(document).ready(function() {
     const dynamicReview = `<div class="review">
         <h3>${escape(review.name)}</h3>
         <p>${escape(review.message)}</p>
-        <p>${timeAgo}</p>
+        <p class="time-ago">${timeAgo}</p>
+
         </div>`;
     return dynamicReview;
 
@@ -70,7 +71,7 @@ $(document).ready(function() {
       url: '/api/reviews',
       data: encodedURL,
     }).then((response) => {
-      console.log('Successfully added review: ', response);
+      // console.log('Successfully added review: ', response);
       loadReviews();
     }).catch((err) => {
       console.log(err);

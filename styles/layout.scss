@@ -5,7 +5,7 @@ html {
 
 body {
   color: rgb(113, 76, 30);
-  background-color: transparent;
+  background-color: rgb(43, 30, 30);
 }
 .body-container{
   margin-top:300px;
@@ -29,28 +29,21 @@ flex-wrap: wrap;
   color: rgb(113, 76, 30);
   font-size: 40px;
 }
-// .menu-items h2 {
-//   font-family: 'Press Start 2P', cursive;
-// font-size: 25px;
-// color: #4c310f;
-// padding-top: -5px;
-// display: flex;
-// align-items: center;
-// }
 
 .item {
+  background: linear-gradient(to bottom, #ea852d 0%, #ac5e11 100%);
   background-color: rgb(231, 186, 160);
   color: #0c0b0b;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   font-size: 30px;
   border-radius: 10px;
   border: 5px solid rgb(113, 76, 30);
   margin: 10px;
   color: #4c310f;
   padding: 1em;
-  flex: 1;
+  flex: 1 1 33%;
+
 }
 
 .item:hover {
@@ -58,15 +51,17 @@ flex-wrap: wrap;
 }
 
 .details {
-  width: 50%;
+  color: brown;
   display: flex;
   flex-direction: column;
   text-align: left;
   font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Press Start 2P', cursive;
+
 }
 #menu-header{
 margin-top: 70vh;
+color: burlywood;
 }
 .menu-style {
   display: flex;
@@ -76,12 +71,16 @@ margin-top: 70vh;
   justify-content: space-evenly;
   width: 100%;
 }
-
+.add-shopping{
+margin-top: 20px;
+}
 .icon {
   display: flex;
   padding: 10px;
 }
-
+.img{
+  max-width: 50%;
+}
 .icon:hover {
   color: rgb(113, 76, 30);
 }
@@ -91,7 +90,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 article.item .img img{

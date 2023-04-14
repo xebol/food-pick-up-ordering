@@ -52,9 +52,9 @@
 
   <div class="body-container">
     <header id="header" class="header">
-      <!-- <h1 id="luigis">Luigi's</h1>
+      <h1 id="luigis"> <i class="nes-icon is-medium star"></i>     Luigi's  <i class="nes-icon is-medium star"></i>     </h1>
       <h6 id="about-us-header">About Us</h6>
-      <p id="desc" style="text-align: justify">
+      <p id="desc" style="text-align: justify;">
 
         Luigi's restaurant in the Mushroom Kingdom is a delightful dining spot that
         offers a unique experience to its visitors. The restaurant is the latest venture of Luigi,
@@ -66,7 +66,7 @@
         The menu features dishes made with locally-sourced ingredients that highlight the
         flavors of the Mushroom Kingdom. From classic linguini to innovative creations like Dry Bone's Marrow,
         the dishes are expertly crafted and bursting with flavors.
-      </p> -->
+      </p>
     </header>
 
     <main class="container">
@@ -89,29 +89,22 @@
       </section>
       <section class="new-reviews">
         <form id="review-form">
-
           <div class="nes-field is-inline">
-            <textarea name="reviewMessage" type="text" id="inline_field" class="nes-input is-success review-text"
-              placeholder="Leave us a review!"></textarea>
-          </div>
 
-          <div class="rate">
-            <input type="radio" id="star1" name="rate" value="1" />
-            <label for="star1" title="text"></label>
-            <input type="radio" id="star2" name="rate" value="2" />
-            <label for="star2" title="text"></label>
-            <input type="radio" id="star3" name="rate" value="3" />
-            <label for="star3" title="text"></label>
-            <input type="radio" id="star4" name="rate" value="4" />
-            <label for="star4" title="text"></label>
-            <input type="radio" id="star5" name="rate" value="5" />
-            <label for="star5" title="text"></label>
-          </div>
-          <div>
-            <button type="submit" id="leave-review">Submit</button>
+
+                <section class="message -left">
+                  <!-- Balloon -->
+                  <div class="nes-balloon from-left">
+                    <textarea name="reviewMessage" type="text" id="inline_field" class="nes-input is-success nes-balloon from-left review-text"
+                      placeholder="Leave us a review!"></textarea>
+                      <button type="submit" id="leave-review">Submit</button>
+                    </div>
+                    <img id="toad" src="/images/toad.png" alt="Image">
+                </section>
           </div>
         </form>
       </section>
+      <section>
       <article class="reviews">loading... </article>
       </section>
 
@@ -119,7 +112,7 @@
         <h3>Address</h3>
         <p class="desc">123 Rainbow Road</p>
         <h3>Phone Number</h3>
-        <p class="desc">555-555-5555</p>
+        <p class="desc">555-555-5555 </p>
         <h3>Hours</h3>
         <p class="desc">24/7</p>
         <div id="icons">

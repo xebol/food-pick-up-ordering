@@ -16,14 +16,13 @@ $(document).ready(function() {
         <div class="details">
           <h2>${item.name}</h2>
           <p>${item.description}.</p>
-          <p>¢${item.price}</p>
-        </div>
-        <div class="img">
-          <img src="${item.food_image_name}" alt="Image" width="110px" height="110px">
-          <p>Add <i class="fa-solid fa-cart-shopping icon" id="${item.id}"></i></p>
+          <p>${item.price}<i class="nes-icon coin is-small"></i></p>
+          <div class="img">
+            <img src="${item.food_image_name}" alt="Image">
+            <div class="add-shopping">Add <i class="fa-solid fa-cart-shopping icon" id="${item.id}"></i></div>
+          </div>
         </div>
       </article>`);
-
     return $item;
 
   };
