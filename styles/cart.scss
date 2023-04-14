@@ -3,7 +3,7 @@
 }
 
 .cart {
-  max-height: 70vh;
+  max-height: 90vh;
   width: 25vw;
   background-color: transparent;
   display: flex;
@@ -15,6 +15,7 @@
   position: sticky;
   top: 40px;
   margin-bottom: 482px;
+  font-size: 10px;
 }
 
 .order-items {
@@ -53,7 +54,7 @@ overflow: auto;
   align-items: flex-start;
   flex-direction: row-reverse;
   font-family: Bungee;
-  margin-bottom: 3em;
+  font-size: 30px;
 }
 
 #submit-order {

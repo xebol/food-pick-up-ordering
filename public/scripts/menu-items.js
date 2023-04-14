@@ -14,12 +14,12 @@ $(document).ready(function() {
     const $item = (`
         <article class="item">
         <div class="details">
-          <h2>${item.name}</h2>
+          <h3>${item.name}</h3>
           <p>${item.description}.</p>
           <p>${item.price}<i class="nes-icon coin is-small"></i></p>
           <div class="img">
             <img src="${item.food_image_name}" alt="Image">
-            <div class="add-shopping">Add <i class="fa-solid fa-cart-shopping icon" id="${item.id}"></i></div>
+            <div class="add-shopping">Add<i class="fa-solid fa-cart-shopping icon" id="${item.id}"></i></div>
           </div>
         </div>
       </article>`);

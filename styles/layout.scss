@@ -7,9 +7,6 @@ body {
   color: rgb(113, 76, 30);
   background-color: rgb(43, 30, 30);
 }
-.body-container{
-  margin-top:300px;
-}
 
 .menu-items {
   display: flex;
@@ -24,10 +21,9 @@ justify-content: center;
 flex-wrap: wrap;
 }
 
-.menu-items h1 {
+.menu-items h3 {
   font-family: 'Press Start 2P', cursive;
   color: rgb(113, 76, 30);
-  font-size: 40px;
 }
 
 .item {
@@ -42,7 +38,7 @@ flex-wrap: wrap;
   margin: 10px;
   color: #4c310f;
   padding: 1em;
-  flex: 1 1 33%;
+  flex: 1 1 25%;
 
 }
 
@@ -55,7 +51,7 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   text-align: left;
-  font-size: 20px;
+  font-size: 10px;
   font-family: 'Press Start 2P', cursive;
 
 }
@@ -73,6 +69,7 @@ color: burlywood;
 }
 .add-shopping{
 margin-top: 20px;
+font-size: 15px;
 }
 .icon {
   display: flex;
