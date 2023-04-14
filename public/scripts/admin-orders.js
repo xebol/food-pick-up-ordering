@@ -11,7 +11,7 @@ $(document).ready(function() {
     <div class="admin-order-item">
     <h4>Order ${order.id}</h4>
     <div class="admin-order-buttons">
-      <button type="submit" class=".button-confirm">Confirm</button>
+      <button id="${order.id}"type="submit" class=".button-confirm">Confirm</button>
     </div>
     </div>
         `);
