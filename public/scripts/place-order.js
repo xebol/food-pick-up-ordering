@@ -8,7 +8,7 @@ $(document).ready(function() {
           <h2>${item.name}</h2>
           <div class="order-item-p">
             <p>-</p>
-            <p>1</p>
+            <p class="quantity">1</p>
             <p>+</p>
           </div>
           <i id="${item.id}" class="fa-solid fa-trash-can"></i>
@@ -31,12 +31,20 @@ $(document).ready(function() {
       method: 'GET',
       url: `/api/menu_items/${menuItemID}`
     })
-      .then((items) => {
-        //to store an data to the browser storage, turn it into a string
-        localStorage.setItem(`${menuItemID}`, JSON.stringify(items));
+      .then((response) => {
+        const itemExist = localStorage.getItem(menuItemID);
+        const itemObj = itemExist? JSON.parse(itemExist) : response;
+
+       //add to quantity
+       console.log('itemObj', itemObj)
+       itemObj.item.quantity = (itemObj.item.quantity || 0) + 1;
+       localStorage.setItem(`${menuItemID}`, JSON.stringify(itemObj));
+
+
+        //to store data to the browser storage, turn it into a string
         // const retrievedObject = JSON.parse(localStorage.getItem(`${menuItemID}`));
         // console.log('retrievedObject', retrievedObject);
-        renderItem(items.item);
+        renderItem(itemObj.item);
       });
 
   });
