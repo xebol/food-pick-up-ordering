@@ -57,6 +57,7 @@ $(document).ready(function() {
 
   checkLogIn()
     .then(function(json) {
+      console.log('Header checklogin response', json);
       updateHeader(json.user);
     });
 

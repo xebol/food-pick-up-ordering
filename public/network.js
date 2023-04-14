@@ -14,3 +14,15 @@ const logOut = () => {
   });
 };
 
+const sendConfirmation = function(id) {
+  $('.button-confirm').on('click', function() {
+    $.ajax({
+      method: 'GET',
+      url: `/api/orders/${id}`,
+    })
+      .then((response) => {
+        console.log('ADMIN AJAX RESPONSE', response);
+      });
+
+  });
+};

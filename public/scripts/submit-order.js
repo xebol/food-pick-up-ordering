@@ -27,6 +27,7 @@ $(document).ready(function() {
       contentType: "application/json"
     })
       .then((response) => {
+        alert('Order submitted successfully');
         console.log('Response', response);
         //When order is submitted clear the cart
         const $clearCart = $('.order-item');
