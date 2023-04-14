@@ -96,7 +96,7 @@ router.post('/', (req, res) => {
     .then(() => {
       return client.messages
         .create({
-          body: 'DYNAMIC CODE HERE FOR ORDER',
+          body: 'New Order Submitted',
           from: '+15075167661',
           to: '+15148338334'
         });
