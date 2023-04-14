@@ -5,12 +5,7 @@ $(document).ready(function() {
   const placeOrder = function(item) {
     const $orderId = $(`
     <div class="order-item" id="removeItem">
-          <h2>${item.name}</h2>
-          <div class="order-item-p">
-            <p>-</p>
-            <p class="quantity">1</p>
-            <p>+</p>
-          </div>
+          <h3>- ${item.name}</h3>
           <i id="${item.id}" class="fa-solid fa-trash-can"></i>
         </div>
         `);

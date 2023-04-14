@@ -10,9 +10,19 @@ const authToken = process.env.DB_AUTH_KEY;
 const client = require('twilio')(accountSid, authToken);
 
 router.get('/:id', (req, res) => {
-  orderQueries.getOrdersByID()
-    .then(orders => {
-      res.json({ orders });
+  // const id = req.params.id;
+  // orderQueries.getOrdersByID(id)
+    orderQueries.getOrders()
+    .then(() => {
+      return client.messages
+        .create({
+          body: `It'sa me, Luigi! Ha ha! Your order will be available for pick up in approximately 25 minutes. See you then!`,
+          from: '+15075167661',
+          to: '+15148338334'
+        });
+    })
+    .then(() => {
+      return res.send('Order was placed successfully!');
     })
     .catch(err => {
       res
@@ -47,7 +57,6 @@ router.get('/', (req, res) => {
         .json({ error: err.message });
     });
 });
-
 
 
 //set up code that responds to a post request '/api/orders'
