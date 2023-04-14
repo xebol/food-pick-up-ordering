@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -18,7 +19,7 @@ header {
   font-family: 'Mea Culpa', cursive;
   font-size: 150px;
   color: rgb(61, 177, 61);
-  text-shadow: 1px 1px rgb(253, 244, 244);
+    text-shadow: 1px 1px rgb(253, 244, 244);
 }
 #luigis:hover{
   color: rgb(167, 214, 167);
@@ -28,12 +29,14 @@ header {
 #about-us-header{
   font-family: 'Press Start 2P', cursive;
   font-size: 30px;
+  color: burlywood;
 }
 
 #desc {
   font-family: 'Press Start 2P', cursive;
   font-size: 16px;
   max-width: 60%;
+  color: burlywood;
 
 }
 

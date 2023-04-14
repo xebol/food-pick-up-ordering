@@ -22,7 +22,8 @@ $(document).ready(function() {
     const dynamicReview = `<div class="review">
         <h3>${escape(review.name)}</h3>
         <p>${escape(review.message)}</p>
-        <p>${timeAgo}</p>
+        <p class="time-ago">${timeAgo}</p>
+
         </div>`;
     return dynamicReview;
 
