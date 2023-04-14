@@ -15,10 +15,11 @@ const logOut = () => {
 };
 
 const sendConfirmation = function(id) {
-  $('.button-confirm').on('click', function() {
+  $(`#${id}`).on('click', function() {
+    console.log(this);
     $.ajax({
       method: 'GET',
-      url: `/api/orders/${id}`,
+      url: `/api/orders/${id}`
     })
       .then((response) => {
         console.log('ADMIN AJAX RESPONSE', response);
